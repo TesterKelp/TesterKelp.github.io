@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <!-- START: header -->
+ 
+
+  <header role="banner" class="probootstrap-header" height="100px">
+    <div class="container">
+        <a href="index.html" class="probootstrap-logo">测试攻城狮<span>.</span></a>
+        
+        <a href="#" class="probootstrap-burger-menu visible-xs" ><i>Menu</i></a>
+        <div class="mobile-menu-overlay"></div>
+
+        <nav role="navigation" class="probootstrap-nav hidden-xs">
+          <ul class="probootstrap-main-nav">
+ 	    <li ><a href="index.html">首页 </a></li>
+            <li ><a href="base.html">基础 操作 </a></li>
+            <li><a href="base1.html">框架 窗体</a></li>
+            <li><a href="base2.html">获取各项值</a></li>
+            <li class="active"><a href="base3.html">元素定位专题</a></li>
+          </ul>
+        </nav>
+    </div>
+  </header>
+  <!-- END: header -->
+ <hr style="margin-top: 0px;  border-color:#BADDDB">
+  <div class="probootstrap-section">
+    <div class="container text-center">
+      <div class="row">
+      
+     <div class="col-md-12 col-md-offset-0 mb40">
+
+
+<div class="col-md-12">
+       
+<table   style="border:1px solid #BADDDB;width:100% ;font-size:13px; color:#000000;}" >
+<tr style="border:1px solid #BADDDB;"><td style="width:200px">   元素定位/通过partialLinkText 定位元素/    </td> </tr>
+
+
+
+
+
+
+
+<tr><td  style="padding-left:30px;height:40px" align="left">
+
+<div  style="order:1px solid #000" >
+<br>
+
+    <div class="form-group"  align="center">
+
+       <a href="">中国北京朝阳</a>             <a href="">山东青岛即墨</a>
+
+    </div>
+    <Br>
+
+
+</div>
+
+  </td>    </tr>
+<tr><td  style="padding-left:30px;height:40px" align="left" >HTML效果<hr></td>    </tr>
+<tr><td  style="padding-left:30px;height:40px" align="left">
+<div  style="order:1px solid #000" >
+  <xmp style="background-color:#F5F5DC;">
+
+       <a href="">中国北京朝阳</a>             <a href="">山东青岛即墨</a>
+
+</xmp>
+
+</div>
+
+
+
+  </td>    </tr>
+<tr><td  style="padding-left:30px;height:40px" align="left" >HTML代码<hr ></td>    </tr>
+
+
+<tr><td  style="padding-left:30px;height:40px" align="left" ><div  style="order:1px solid #000" >
+
+  <xmp style="background-color:#F5F5DC;">
+        WebElement  TPartialLinkText = driver.findElement(By.partialLinkText("北京"));
+        System.out.println(TLinkText.getText()) ;
+
+</xmp>
+
+</div></td> </tr>
+<tr><td  style="padding-left:30px;height:40px" align="left" >Java webdriver代码<hr></td>     </tr>
+
+<tr><td  style="padding-left:30px;height:40px" align="left" >运行结果</td> </tr>
+<tr><td  style="padding-left:30px;height:40px" align="left" ><hr>  celipse控制台输出 中国北京朝阳
+<Br><br>  <Br><br><Br><br>
+
+
+</td> </tr>
+
+
+
+<!--
+
+<tr><td  style="padding-left:30px;height:40px" align="left">通过id定位元素</td>   <td> <input type="text"  id="name"  placeholder="请输姓名  " siz="15"> </td> <td>3333333333</td> </tr>
+<tr><td  style="padding-left:30px;height:40px" align="left">通过name</td>   <td> <input type="text"   name="name" placeholder="请输姓名  " siz="15"> </td> <td>3333333333</td> </tr>
+<tr><td  style="padding-left:30px;height:40px" align="left">通过css</td>   <td>3333333333</td> <td>3333333333</td> </tr>
+<tr><td  style="padding-left:30px;height:40px" align="left">通过tagname</td>   <td>3333333333</td> <td>3333333333</td> </tr>
+
+<tr><td  style="padding-left:30px;height:40px" align="left">通过className</td>   <td><div classname="webclassname"> 通过类名进行定位</div></td>  <td>3333333333</td></tr>
+<tr><td  style="padding-left:30px;height:40px" align="left">通过xpath</td>   <td>3333333333</td> <td>3333333333</td> </tr>
+<tr><td  style="padding-left:30px;height:40px" align="left">通过linkText</td>   <td>3333333333</td> <td>3333333333</td> </tr>
+<tr><td  style="padding-left:30px;height:40px" align="left">通过partialLinkText</td>   <td>3333333333</td> <td>3333333333</td> </tr>
+<tr><td  style="padding-left:30px;height:40px" align="left">通过start-with开头</td>   <td>3333333333</td>  <td>3333333333</td></tr>
+<tr><td  style="padding-left:30px;height:40px" align="left">通过结尾</td>   <td>3333333333</td>  <td>3333333333</td></tr>
+<tr><td  style="padding-left:30px;height:40px" align="left">通过 parent::父类</td>   <td>3333333333</td>  <td>3333333333</td></tr>
+<tr><td  style="padding-left:30px;height:40px" align="left">通过 child::子类</td>   <td>3333333333</td>  <td>3333333333</td></tr>
+<tr><td  style="padding-left:30px;height:40px" align="left">通过兄弟</td>   <td>3333333333</td>  <td>3333333333</td></tr>
+<tr><td  style="padding-left:30px;height:40px" align="left">通过contains包含某个文字</td>   <td>3333333333</td> <td>3333333333</td> </tr>
+
+-->
+
+
+
+
+</table>
+ ancestor::和descendant::  研究
+
+https://blog.csdn.net/qingchunjun/article/details/54772940
+   </div>
+    
+            
+        </div>
+      </div>
+
+      <div class="row probootstrap-gutter16">
+   
+        <div class="col-md-7 probootstrap-animate" data-animate-effect="fadeIn">
+        
+
+
+
+
+        </div>
+      </div>
+
+      
+
+     
+      
+    </div>
+  </div>
+
+  <footer class="probootstrap-footer" role="contentinfo" >
+ 
+        <div  align="center">
+          <p >Copyright &copy; 2018.Company name All rights reserved.More Templates </p>
+
+      </div>
+   
+  </footer>
+
+
+  <script src="js/scripts.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/custom.js"></script>
+
+  </body>
+</html>
